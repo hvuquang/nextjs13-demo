@@ -1,0 +1,15 @@
+{
+  "name": "next13-notes-app-api",
+  "version": "1.0.0",
+  "description": "A simple JSON-server based API for a CRUD notes-app created with Next13",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "author": "Patrick Obermeier",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}

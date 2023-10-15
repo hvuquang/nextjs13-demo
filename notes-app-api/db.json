@@ -1,0 +1,46 @@
+{
+  "notes": [
+    {
+      "id": "snVToONcO5xDQakdIuDWW",
+      "createdAt": 1697267915000,
+      "updatedAt": 1697267915000,
+      "title": "Meeting Notes",
+      "body": "This is an example note. It contains **Markdown**!"
+    },
+    {
+      "id": "m_LJ1lo7IdcNsNfs-CSF9",
+      "createdAt": 1697268035000,
+      "updatedAt": 1697268035000,
+      "title": "Make a thing",
+      "body": "It\\'s very easy to make some words **bold** and other words *italic* with\\n    Markdown. You can even [link to React\\'s website!](https://www.reactjs.org)."
+    },
+    {
+      "id": "elt8ORKjvTfD-XiwVggZj",
+      "title": "B note with a very long title because sometimes you need more words",
+      "body": "You can write all kinds of [amazing](https://en.wikipedia.org/wiki/The_Amazing) notes in this app! These note live on the server in the `notes` folder.    ![This app is powered by React](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/React_Native_Logo.png/800px-React_Native_Logo.png)",
+      "createdAt": 1697354507866,
+      "updatedAt": 1697366018432
+    },
+    {
+      "id": "nkQNvNIQbbAYcpIAoshwY",
+      "title": "Seminar Nextjs",
+      "body": "- introduction\n- install \n- rendering\n- fetching API",
+      "createdAt": 1697359255842,
+      "updatedAt": 1697359255842
+    },
+    {
+      "id": "l-IRqFvwcvxj-tTdG6hi8",
+      "title": "seminar Nextjs",
+      "body": "- introduction\n- installation\n- bla bla",
+      "createdAt": 1697362843318,
+      "updatedAt": 1697362941554
+    },
+    {
+      "id": "San1fOW3RsysBkkKc5XMn",
+      "title": "old Note 34",
+      "body": "heheess",
+      "createdAt": 1697362960211,
+      "updatedAt": 1697368315259
+    }
+  ]
+}

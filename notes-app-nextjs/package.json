@@ -1,0 +1,32 @@
+{
+  "name": "notes-app-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "marked": "^9.1.2",
+    "nanoid": "^5.0.1",
+    "next": "13.5.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "sanitize-html": "^2.11.0",
+    "tinykeys": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/marked": "^6.0.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/sanitize-html": "^2.9.2",
+    "eslint": "^8",
+    "eslint-config-next": "^13.5.4",
+    "prettier": "^3.0.3",
+    "typescript": "^5"
+  }
+}
