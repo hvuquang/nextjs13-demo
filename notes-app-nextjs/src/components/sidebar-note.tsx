@@ -1,5 +1,5 @@
 import { format, isToday } from "date-fns";
-import { Note } from "types/note";
+import { Note } from "@/types/note";
 import Link from "next/link";
 
 type SidebarNoteProps = {

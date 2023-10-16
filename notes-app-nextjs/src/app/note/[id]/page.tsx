@@ -8,9 +8,9 @@ const fetchSingleNote = async (id: string) => {
   const res = await fetch(`http://localhost:8088/notes/${id}`, {
     cache: "no-store",
   });
+  // throw new Error(`note with id ${id} is not found`);
 
   const note = (await res.json()) as Note;
-  // throw new Error(`note with id ${id} is not found`);
   return note;
 };
 

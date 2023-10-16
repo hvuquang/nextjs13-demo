@@ -3,12 +3,10 @@
 
 import { startTransition, useCallback, useEffect, useState } from "react";
 import { nanoid } from "nanoid";
-import { Note } from "types/note";
-import { useRouter } from "next/navigation";
-import { tinykeys } from "tinykeys";
-
+import { Note } from "@/types/note";
+import { tinykeys } from "@/lib/tinykeys";
 import NotePreview from "./note-preview";
-import { revalidatePath } from "next/cache";
+import { useRouter } from "next/navigation";
 
 const BASE_API_URI = "http://localhost:8088";
 
@@ -49,10 +47,6 @@ export default function NoteEditor({
     const response = await saveNote(payload);
 
     if (response?.ok) {
-      if (payload.id === noteId) {
-        revalidatePath("/note/" + noteId);
-      }
-
       startTransition(() => {
         router.replace("/note/" + payload.id);
         router.refresh();
