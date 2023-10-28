@@ -4,6 +4,8 @@ const router = jsonServer.router("db.json");
 
 const middlewares = jsonServer.defaults();
 
+var fs = require('fs')
+
 server.use(middlewares);
 server.use(router);
 
