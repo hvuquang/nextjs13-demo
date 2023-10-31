@@ -2,16 +2,23 @@
 const express = require("express");
 const morgan = require("morgan");
 
+//need to npm install
+var bodyParser = require('body-parser')
+
+
 //express app
 const app = express();
 const port = 3000;
 const path = require("path");
 const mongoose = require('mongoose')
 
-//models
-const Blog = require('./models/blog')
+//routes
+const blog_router = require('./routes/blogRoutes')
 
-//connect to mongodb
+// apply route into app.js
+// route bắt đầu bằng blogs
+app.use('/blogs', blog_router)
+
 const dbURI = `mongodb+srv://huyv:test123456@cluster0.hq6re8u.mongodb.net/blog-db?retryWrites=true&w=majority`;
 mongoose.connect(dbURI)
 .then(() => {
@@ -39,23 +46,11 @@ app.use(morgan("dev"));
 //sometimes you need to specify what files can be public
 app.use(express.static("assets"));
 
-app.get('/add-blog', (req, res) => {
-    const blog = new Blog({
-        title: 'new blog',
-        snippet: 'about my new blog',
-        content: 'more about my new blog'
-    })
+//install bodyParse
+//parse data in req body
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: false}))
 
-    //save to db
-    //promise
-    blog.save()
-    .then((result) => {
-        res.send(result)
-    })
-    .catch((error) => {
-        console.log(error)
-    })
-})
 
 //routing
 app.get("/", (req, res) => {

@@ -18,6 +18,9 @@ const blogSchema =  new Schema({
 }, {timestamps: true})
 
 //create MODEL based on the Schema
+// first parameter is a singular name for a object
+// auto looks for the plural, lowercased version in your collection
+// example: Blog -> collection named blogs
 const Blog = mongoose.model('Blog', blogSchema)
 
 //export module to use
